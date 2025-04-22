@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/modelProjects.css">
+    <link rel="stylesheet" href="../Font-Awesome/fontawesome-free-6.7.1-web/css/all.min.css">
+    <link rel="stylesheet" href="Style/header.css">
+    <link rel="stylesheet" href="Style/footer.css">
+    <link rel="stylesheet" href="Style/main.css">
+    <link rel="stylesheet" href="Style/filter.css">
+    <title>Model Projects</title>
+    <link rel="shortcut icon" href="../IMG/Logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="header-container__search">
+            <form method="get" class="search-form">
+                <input type="text" name="q" placeholder="Pesquisar...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="header-elements">
+            <div class="header-container__items">
+                <a href="">
+                    <p class="header-text">Sobre</p>
+                </a>
+            </div>
+            <div class="header-container__items">
+                <a href="../index.html">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </div>
+            <div class="header-container__items">
+                <a href="">
+                    <i class="fa-solid fa-circle-info"></i>
+                </a>
+            </div>
+            <div class="header-container__items">
+                <a href="">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+            <div class="header-container__items">
+                <a href="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+            <div class="header-container__items">
+                <a href="">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <i class="fa-solid fa-filter filter" onclick="openFilter()"></i>
+    <span class="filterText">Filtros</span>
+
+    <main>
+        <div class="container-filter__absolute">
+            <div class="container-filter__subParent">
+                <i class="fa-solid fa-xmark filter-closeButton" onclick="openFilter()"></i>
+                <div class="container-filter">
+                    <h2>Filtros dos Projetos</h2>
+                    <div class="filter-grid">
+                        <div>
+                            <h2>Filtrar Por Programador</h2>
+                            <ul class="filter-list">
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Mais bem avaliados</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Recomendados pela plataforma</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Há mais tempo na plataforma</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Maior quantidade de projetos</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Maior velocidade de entrega</p></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Filtrar Projeto</h2>
+                            <ul class="filter-list">
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Design</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Edição de Videos</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Front-end</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Back-end</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Inteligência Artificial</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Fullstack</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Mobile</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Automação de Sistemas</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Outros</p></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Filtrar Por Tecnologia</h2>
+                            <ul class="filter-list">
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Java</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Wordpress</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>C#</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Photoshop</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Adobe Premier Video</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>React</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Python</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Html/Css</p></li>
+                                <li><span><i onclick="filterChange(this)" class="fa-solid fa-sort-up filter"></i></span><p>Outras</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-buttons">
+                        <button onclick="openFilter()">Cancel</button>
+                        <button onclick="openFilter()">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="container-title">
+                <div class="container-project__title">
+                    <h1 class="project-title">Produtos do dia</h1>
+                    <p class="project-description">Produtos mais vendidos de cada dia</p>
+                </div>
+                <p class="title-more">Ver tudo</p>
+            </div>
+            <div class="grid-container">
+                <div class="card-container">
+                    <div class="card-container-image">
+                        <img class="image-project" src="IMG/Barber-image.png" alt="Imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <div class="container-perfil">
+                            <div class="container-info-perfil">
+                                <img class="image-profile" src="IMG/Profile 1.jpg" alt="">
+                                <p>Website para barbeiros feito com React</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container-rating">
+                                <img src="IMG/5 estrelas.png" alt="">
+                                <p>R$300</p>
+                            </div>
+                            <p></p>
+                        </div>
+                        <button class="button-demo">Demo</button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-container-image">
+                        <img class="image-project" src="IMG/Barber-image.png" alt="Imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <div class="container-perfil">
+                            <div class="container-info-perfil">
+                                <img class="image-profile" src="IMG/Profile 1.jpg" alt="">
+                                <p>Website para barbeiros feito com React</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container-rating">
+                                <img src="IMG/5 estrelas.png" alt="">
+                                <p>R$300</p>
+                            </div>
+                            <p></p>
+                        </div>
+                        <button class="button-demo">Demo</button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-container-image">
+                        <img class="image-project" src="IMG/Barber-image.png" alt="Imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <div class="container-perfil">
+                            <div class="container-info-perfil">
+                                <img class="image-profile" src="IMG/Profile 1.jpg" alt="">
+                                <p>Website para barbeiros feito com React</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container-rating">
+                                <img src="IMG/5 estrelas.png" alt="">
+                                <p>R$300</p>
+                            </div>
+                            <p></p>
+                        </div>
+                        <button class="button-demo">Demo</button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-container-image">
+                        <img class="image-project" src="IMG/Barber-image.png" alt="Imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <div class="container-perfil">
+                            <div class="container-info-perfil">
+                                <img class="image-profile" src="IMG/Profile 1.jpg" alt="">
+                                <p>Website para barbeiros feito com React</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container-rating">
+                                <img src="IMG/5 estrelas.png" alt="">
+                                <p>R$300</p>
+                            </div>
+                            <p></p>
+                        </div>
+                        <button class="button-demo">Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="container-title">
+                <div class="container-project__title">
+                    <h1 class="project-title">Na Moda</h1>
+                    <p class="project-description">Os design que mais bombaram essa semana</p>
+                </div>
+                <p class="title-more">Ver tudo</p>
+            </div>
+            <div class="grid-container">
+                <div class="card-container">
+                    <div class="card-container-image">
+                        <img class="image-project" src="IMG/Barber-image.png" alt="Imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <div class="container-perfil">
+                            <div class="container-info-perfil">
+                                <img class="image-profile" src="IMG/Profile 1.jpg" alt="">
+                                <p>Website para barbeiros feito com React</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container-rating">
+                                <img src="IMG/5 estrelas.png" alt="">
+                                <p>R$300</p>
+                            </div>
+                            <p></p>
+                        </div>
+                        <button class="button-demo">Demo</button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-container-image">
+                        <img class="image-project" src="IMG/Barber-image.png" alt="Imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <div class="container-perfil">
+                            <div class="container-info-perfil">
+                                <img class="image-profile" src="IMG/Profile 1.jpg" alt="">
+                                <p>Website para barbeiros feito com React</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container-rating">
+                                <img src="IMG/5 estrelas.png" alt="">
+                                <p>R$300</p>
+                            </div>
+                            <p></p>
+                        </div>
+                        <button class="button-demo">Demo</button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-container-image">
+                        <img class="image-project" src="IMG/Barber-image.png" alt="Imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <div class="container-perfil">
+                            <div class="container-info-perfil">
+                                <img class="image-profile" src="IMG/Profile 1.jpg" alt="">
+                                <p>Website para barbeiros feito com React</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container-rating">
+                                <img src="IMG/5 estrelas.png" alt="">
+                                <p>R$300</p>
+                            </div>
+                            <p></p>
+                        </div>
+                        <button class="button-demo">Demo</button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-container-image">
+                        <img class="image-project" src="IMG/Barber-image.png" alt="Imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <div class="container-perfil">
+                            <div class="container-info-perfil">
+                                <img class="image-profile" src="IMG/Profile 1.jpg" alt="">
+                                <p>Website para barbeiros feito com React</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container-rating">
+                                <img src="IMG/5 estrelas.png" alt="">
+                                <p>R$300</p>
+                            </div>
+                            <p></p>
+                        </div>
+                        <button class="button-demo">Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="container-title">
+                <div class="container-project__title">
+                    <h1 class="project-title">Campeões de vendas</h1>
+                    <p class="project-description">Templates com maiores números de venda do site</p>
+                </div>
+                <p class="title-more">Ver tudo</p>
+            </div>
+            <div class="grid-container">
+                <div class="card-container">
+                    <div class="card-container-image">
+                        <img class="image-project" src="IMG/Barber-image.png" alt="Imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <div class="container-perfil">
+                            <div class="container-info-perfil">
+                                <img class="image-profile" src="IMG/Profile 1.jpg" alt="">
+                                <p>Website para barbeiros feito com React</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container-rating">
+                                <img src="IMG/5 estrelas.png" alt="">
+                                <p>R$300</p>
+                            </div>
+                            <p></p>
+                        </div>
+                        <button class="button-demo">Demo</button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-container-image">
+                        <img class="image-project" src="IMG/Barber-image.png" alt="Imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <div class="container-perfil">
+                            <div class="container-info-perfil">
+                                <img class="image-profile" src="IMG/Profile 1.jpg" alt="">
+                                <p>Website para barbeiros feito com React</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container-rating">
+                                <img src="IMG/5 estrelas.png" alt="">
+                                <p>R$300</p>
+                            </div>
+                            <p></p>
+                        </div>
+                        <button class="button-demo">Demo</button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-container-image">
+                        <img class="image-project" src="IMG/Barber-image.png" alt="Imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <div class="container-perfil">
+                            <div class="container-info-perfil">
+                                <img class="image-profile" src="IMG/Profile 1.jpg" alt="">
+                                <p>Website para barbeiros feito com React</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container-rating">
+                                <img src="IMG/5 estrelas.png" alt="">
+                                <p>R$300</p>
+                            </div>
+                            <p></p>
+                        </div>
+                        <button class="button-demo">Demo</button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-container-image">
+                        <img class="image-project" src="IMG/Barber-image.png" alt="Imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <div class="container-perfil">
+                            <div class="container-info-perfil">
+                                <img class="image-profile" src="IMG/Profile 1.jpg" alt="">
+                                <p>Website para barbeiros feito com React</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="container-rating">
+                                <img src="IMG/5 estrelas.png" alt="">
+                                <p>R$300</p>
+                            </div>
+                            <p></p>
+                        </div>
+                        <button class="button-demo">Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-sobre">
+                <img class="footer-logo" src="../IMG/Logo.png" alt="">
+                <p>Um marketplace focado em conectar microempreendedores a soluções rápidas, práticas e
+                    acessíveis, facilitando o crescimento e a gestão eficiente dos seus negócios.
+                </p>
+                <div class="footer-sobre__socialmediacontainer">
+                    <i class="fa-brands fa-facebook footer-sobre__socialmediaicons"></i>
+                    <i class="fa-brands fa-x-twitter footer-sobre__socialmediaicons"></i>
+                    <i class="fa-brands fa-instagram footer-sobre__socialmediaicons"></i>
+                </div>
+            </div>
+            <div class="footer-options">
+                <h2>Produtos</h2>
+                <ul>
+                    <li>Projetos Desktop</li>
+                    <li>Projetos Web</li>
+                    <li>Projetos Mobile</li>
+                </ul>
+            </div>
+
+            <div class="footer-options">
+                <h2>Categorias</h2>
+                <ul>
+                    <li>Moda e Beleza</li>
+                    <li>Negócios e serviços</li>
+                    <li>Esporte</li>
+                    <li>Comida</li>
+                    <li>Imóveis</li>
+                    <li>Automóveis</li>
+                </ul>
+            </div>
+
+            <div class="footer-options">
+                <h2>Apoio</h2>
+                <ul>
+                    <li>Chat bot</li>
+                    <li>Dúvidas Frequente</li>
+                    <li>Atendimento personalizado</li>
+                    <li>Política e Privacidade</li>
+                    <li>Tudo sobre ser um fornecedor</li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-direitos">© 2025 NomeDaEmpresa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="Script/filter.js"></script>
+</body>
+
+</html>

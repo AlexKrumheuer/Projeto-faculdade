@@ -1,0 +1,101 @@
+main {
+    position: relative;
+}
+
+.filter {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.filterText {
+    font-size: 1.5rem;
+}
+
+.container-filter__absolute {
+    position: absolute;
+    z-index: 999;
+    width: 100vw;
+    min-height: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.container-filter__subParent {
+    position: relative;
+}
+
+.filter-closeButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.filter-closeButton:hover {
+    color: #fff;
+}
+
+.container-filter {
+    border-radius: 8px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #006A71;
+    width: 50vw;
+    height: auto;
+}
+
+.container-filter h2 {
+    text-align: center;
+}
+
+.filter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.filter-list {
+    list-style: none;
+}
+
+.filter-list li {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.filter-list li:hover {
+    color: #fff;
+}
+
+.filter-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.filter-buttons button {
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: 0.25s;
+}
+
+.filter-buttons button:hover {
+    background-color: #fff;
+    color: #000;
+}
