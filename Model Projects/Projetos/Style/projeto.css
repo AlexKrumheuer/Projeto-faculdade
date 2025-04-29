@@ -1,0 +1,130 @@
+main {
+    height: auto;
+    padding: 2rem;
+    margin-bottom: 15%;;
+}
+
+.product-title {
+    display:flex;
+    justify-content: space-around;
+}
+
+.button-demo {
+    width: 30%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #c0c0c0;
+    background-color: #fff;
+    cursor:pointer;
+}
+
+.button-demo:hover {
+    color: #fff;
+    background-color: #006A71;
+}
+
+.container-product {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 5rem;
+}
+
+.container-image {
+    width: 50%;
+    height: 100%;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.container-option {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.container-product__option {
+    padding: 1rem;
+    font-size: 1.3rem;
+    width: 100%;
+    border: 2px solid #000;
+    border-radius: 8px;
+    display: flex;
+    gap: 2rem;
+    align-items: start;
+    cursor: pointer;
+}
+
+.container-product__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-button {
+    padding: 1rem;
+    background-color: #006A71;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.product-button:hover {
+    background-color: #000;
+
+}
+
+.container-info {
+    display: flex;
+    min-width: auto;
+    height: auto;
+    justify-content: space-between;
+    padding: 5rem;
+    margin-top: 5rem;
+}
+
+.product-info {
+    list-style: none;
+}
+
+.product-info li {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.container-info h2 {
+    margin-top: 3rem;
+}
+
+.container-info p,h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.author-profile {
+    width: 30rem;
+    height: fit-content;
+    padding: 2rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 8px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.author-info img{
+    width: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+}

@@ -43,7 +43,7 @@
     position: fixed;
     top: 71px; 
     left: 0;
-    width: 200px;
+    width: 260px;
     height: calc(100vh - 60px);
     background-color: #fff;
     display: flex;
@@ -94,5 +94,14 @@
     justify-content: center;
     font-weight: bold;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .caixinha a {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: none;
   }
   

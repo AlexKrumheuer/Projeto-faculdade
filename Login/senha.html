@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recupere sua senha</title>
+    <style>
+        body {
+          background: linear-gradient(120deg, #578588, #006a71);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .form {
+          background-color: #fff;
+          box-shadow: 5px 20px 35px rgba(0, 0, 0, 0.233);
+          width: 350px;
+          height: 250px;
+          padding: 30px;
+          text-align: center;
+          border-radius: 20px;
+        }
+  
+        h1 {
+          font-size: 2rem;
+          color: #3a8385;
+          margin: 20px 0 10px 0;
+        }
+  
+        input {
+          width: 250px;
+          margin: 20px 0 0 20px ;
+          outline: 0;
+          border: 0;
+        }
+  
+        button {
+          box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+          background-color: #48a6a7;
+          border-radius: 10px;
+          color: #ffffff;
+          width: 80%;
+          cursor: pointer;
+          border: 0px;
+          padding: 10px;
+          margin: 0 0 20px 0;
+        }
+  
+        button:hover {
+          background: rgba(138, 190, 211, 0.877);
+        }
+  
+        a {
+          text-decoration: underline;
+          color: #48a6a7;
+          margin: 0 0 0 3px;
+        }
+  
+        hr{
+          border: none;
+          height: 1px;
+          width: 230px;
+          background-color: #696565;
+          margin-left: 50px;
+          margin-bottom: 30px;
+        }
+      </style>
+</head>
+<body>
+    <form class="form">
+        <h1>Redefinir senha</h1>
+
+        <input type="email" placeholder="Email">
+        <hr>
+        <button>Solicitar Código</button>
+
+        <div class="newAccount">
+            Ou <a href="cadastro.html">
+                 Criar nova conta
+                </a>
+        </div>
+    </form>       
+</body>
+</html>

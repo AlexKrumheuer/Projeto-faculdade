@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/modelProjects.css">
+    <link rel="stylesheet" href="../../Font-Awesome/fontawesome-free-6.7.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../Style/header.css">
+    <link rel="stylesheet" href="../Style/modelProjects.css">
+    <link rel="stylesheet" href="Style/carrinho.css">
+    <title>Carrinho</title>
+    <link rel="shortcut icon" href="../../IMG/Logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="header-container__search">
+            <form method="get" class="search-form">
+                <input type="text" name="q" placeholder="Pesquisar...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="header-elements">
+            <div class="header-container__items">
+                <a href="">
+                    <p class="header-text">Sobre</p>
+                </a>
+            </div>
+            <div class="header-container__items">
+                <a href="../../index.html">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </div>
+            <div class="header-container__items">
+                <a href="">
+                    <i class="fa-solid fa-circle-info"></i>
+                </a>
+            </div>
+            <div class="header-container__items">
+                <a href="">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+            <div class="header-container__items">
+                <a href="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+            <div class="header-container__items">
+                <a href="">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="carrinho_grid">
+            <div class="carrinho_title">
+                <h1>Carrinho de Compras</h1>
+                <p>Preço</p>
+            </div>
+            <div class="carrinho_products">
+                <div class="carrinho_container">
+                    <div class="carrinho_check">
+                        <input type="checkbox" name="meuCheckbox" value="sim">
+                    </div>
+                    <div class="carrinho_content">
+                        <div class="container-carrinho_image">
+                            <img class="carrinho_image" src="../IMG/Barber-image.png" alt="">
+                        </div>
+                        <div class="carrinho_info">
+                            <h2>Website para barbeiros feito com React</h2>
+                            <p>Feito por Ricardo</p>
+                            <p>Licença comercial</p>
+                            <div class="carrinho_buttons">
+                                <div class="carrinho_buttons--container">
+                                    <i class="fa-solid fa-trash"></i>
+                                    <p>1</p>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="carrinho_preco">
+                        R$300
+                    </p>
+                </div>
+                <div class="carrinho_container">
+                    <div class="carrinho_check">
+                        <input type="checkbox" name="meuCheckbox" value="sim">
+                    </div>
+                    <div class="carrinho_content">
+                        <div class="container-carrinho_image">
+                            <img class="carrinho_image" src="../IMG/Barber-image.png" alt="">
+                        </div>
+                        <div class="carrinho_info">
+                            <h2>Website para barbeiros feito com React</h2>
+                            <p>Feito por Ricardo</p>
+                            <p>Licença comercial</p>
+                            <div class="carrinho_buttons">
+                                <div class="carrinho_buttons--container">
+                                    <i class="fa-solid fa-trash"></i>
+                                    <p>1</p>
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="carrinho_preco">
+                        R$300
+                    </p>
+                </div>
+            </div>
+            <p class="carrinho_grid--subtotal">Subtotal (2 produtos): <b>R$ 600</b></p>
+        </div>
+        <div class="carrinho_sidebar">
+            <div class="carrinho_comprafinal">
+                <div class="carrinho_verify">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Essa compra é garantida pela plataforma. Em caso de problemas com o produto, 
+                        informar a central de ajuda para que você seja devidamente estornado </p>
+                </div>
+                <p class="subtotal">Subtotal (2 produtos): <b>R$ 67,44</b></p>
+                <button class="fecharPedido">Fechar Pedido</button>
+            </div>
+            <div class="carrinho_recomendations">
+                <h3>Com base em seus gostos, recomendamos os seguintes projetos:</h3>
+                <div class="grid-recommendations">
+                    <div class="card_recommendation">
+                        <img class="card_recommendation__image" src="../IMG/Barber-image.png" alt="">
+                        <div class="card_info">
+                            <h2>Website para barbeiros feito com React</h2>
+                            <div >
+                                <div class="card-rating">
+                                    <div class="card-rating__stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>1000</p>
+                                </div>
+                                <p>Ricardo</p>
+                            </div>
+                            <p><b>R$300</b></p>
+                            <button class="card-button">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card_recommendation">
+                        <img class="card_recommendation__image" src="../IMG/Barber-image.png" alt="">
+                        <div class="card_info">
+                            <h2>Website para barbeiros feito com React</h2>
+                            <div >
+                                <div class="card-rating">
+                                    <div class="card-rating__stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>1000</p>
+                                </div>
+                                <p>Ricardo</p>
+                            </div>
+                            <p><b>R$300</b></p>
+                            <button class="card-button">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card_recommendation">
+                        <img class="card_recommendation__image" src="../IMG/Barber-image.png" alt="">
+                        <div class="card_info">
+                            <h2>Website para barbeiros feito com React</h2>
+                            <div >
+                                <div class="card-rating">
+                                    <div class="card-rating__stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>1000</p>
+                                </div>
+                                <p>Ricardo</p>
+                            </div>
+                            <p><b>R$300</b></p>
+                            <button class="card-button">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card_recommendation">
+                        <img class="card_recommendation__image" src="../IMG/Barber-image.png" alt="">
+                        <div class="card_info">
+                            <h2>Website para barbeiros feito com React</h2>
+                            <div >
+                                <div class="card-rating">
+                                    <div class="card-rating__stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>1000</p>
+                                </div>
+                                <p>Ricardo</p>
+                            </div>
+                            <p><b>R$300</b></p>
+                            <button class="card-button">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="card_recommendation">
+                        <img class="card_recommendation__image" src="../IMG/Barber-image.png" alt="">
+                        <div class="card_info">
+                            <h2>Website para barbeiros feito com React</h2>
+                            <div >
+                                <div class="card-rating">
+                                    <div class="card-rating__stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>1000</p>
+                                </div>
+                                <p>Ricardo</p>
+                            </div>
+                            <p><b>R$300</b></p>
+                            <button class="card-button">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

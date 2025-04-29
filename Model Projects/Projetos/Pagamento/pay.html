@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../Style/header.css">
+    <link rel="stylesheet" href="../../../Font-Awesome/fontawesome-free-6.7.1-web/css/all.min.css">
+    <link rel="shortcut icon" href="../../../IMG/Logo.png" type="image/x-icon">
+    <title>Pagamento</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: #006a71;
+        color: white;
+        min-width: 100%;
+      }
+
+      header i,p{
+        font-size: 62.5%;
+      }
+
+      .search-form {
+        display: flex;
+      }
+
+      .search-form input[type="text"] {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 20px 0 0 20px;
+        outline: none;
+        width: 500px;
+      }
+
+      .search-form button {
+        padding: 8px 12px;
+        border: none;
+        background-color: #48a6a7;
+        color: white;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+      }
+
+      .container {
+        padding: 20px;
+        background-color: #f9f9f9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .steps {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        gap: 30px;
+      }
+
+      .step {
+        display: inline-flex;
+        color: #005e46;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .step h5 {
+        margin: 0 7px 0 7px;
+      }
+
+      .products-payment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+      }
+
+      .product-details {
+        display: flex;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 700px;
+        width: 100%;
+      }
+
+      .product-details img {
+        width: 250px;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .product-info {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .product-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .product-info p {
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+      .product {
+        display: inline-flex;
+        padding: 25px;
+      }
+
+      .product img {
+        width: 200px;
+        border-radius: 8px;
+      }
+
+      .title-payment {
+        padding: 40px 0 0 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #48a6a7;
+      }
+
+      .creditCardForm {
+        display: flex;
+        width: 690px;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+      }
+
+      .methodCard {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .cards {
+        display: inline-flex;
+        color: #333;
+        text-decoration: 0;
+      }
+
+      .credit {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.171);
+        text-align: center;
+        padding: 35px 20px 20px 20px;
+        margin: 0 50px 0 0;
+        width: 250px;
+        height: 150px;
+        background-color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .boleto,
+      .pix {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.171);
+        padding: 42px 20px 20px 82px;
+        width: 250px;
+        height: 150px;
+        margin: 0 50px 0 0;
+        background-color: #fff;
+        border-radius: 10px;
+      }
+
+      .creditCardForm h3 {
+        background-color: #48a6a7;
+        color: white;
+        width: 400px;
+        padding: 10px;
+        margin-bottom: 30px;
+        font-size: 16px;
+        margin-left: -50px;
+      }
+
+      .creditCardForm label {
+        font-size: 12px;
+        color: #333;
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      .creditCardForm input {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        width: 350px;
+        margin-bottom: 20px;
+        padding: 8px 0;
+        font-size: 16px;
+        background: transparent;
+        color: #333;
+      }
+
+      .creditCardForm .small-inputs input {
+        width: 90px;
+      }
+
+      .creditCardForm input:focus {
+        border-bottom: 2px solid #48a6a7;
+        outline: none;
+      }
+
+      .small-inputs {
+        display: flex;
+        gap: 25px;
+      }
+
+      select {
+        color: #333;
+        border-radius: 10px;
+        border: 0;
+        outline: 0;
+      }
+
+      .buttonPayment {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        background-color: #48a6a7;
+        color: #fff;
+        border: 0;
+        border-radius: 0px;
+        padding: 10px;
+        margin-top: 25px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .arrowImg {
+        height: 15px;
+        margin: 1px 0 0 5px;
+      }
+
+      .buttonPayment:hover {
+        background: rgba(138, 190, 211, 0.877);
+        color: white;
+        border-color: #00b4ff;
+      }
+
+      .payment-dados {
+        align-items: flex-start;
+        flex-direction: column;
+        display: inline-flex;
+        justify-content: start;
+        align-items: center;
+        width: 250px;
+        height: 150px;
+        padding: 20px;
+      }
+
+      .payScripts-rigth {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 3px;
+        color: #333;
+      }
+
+      .payScripts-left {
+        font-size: medium;
+        gap: 2px;
+        padding: 0 0 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+      }
+
+      .details {
+        display: inline-flex;
+        margin: 10px;
+      }
+
+      .payment-dados h6 {
+        font-size: 12px;
+        color: #192f36;
+      }
+    </style>
+
+    <script>
+      function mostrarFormularioCartao() {
+        const form = document.getElementById("creditCardForm");
+        form.style.display = "flex";
+        form.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container__search">
+          <form method="get" class="search-form">
+              <input type="text" name="q" placeholder="Pesquisar...">
+              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+      </div>
+      <div class="header-elements">
+          <div class="header-container__items">
+              <a href="">
+                  <p class="header-text">Sobre</p>
+              </a>
+          </div>
+          <div class="header-container__items">
+              <a href="../../modelProjects.html">
+                  <i class="fa-solid fa-house"></i>
+              </a>
+          </div>
+          <div class="header-container__items">
+              <a href="">
+                  <i class="fa-solid fa-circle-info"></i>
+              </a>
+          </div>
+          <div class="header-container__items">
+              <a href="">
+                  <i class="fa-solid fa-user"></i>
+              </a>
+          </div>
+          <div class="header-container__items">
+              <a href="../../Carrinho/carrinho.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+          </div>
+          <div class="header-container__items">
+              <a href="">
+                  <i class="fa-solid fa-heart"></i>
+              </a>
+          </div>
+      </div>
+  </header>
+
+    <div class="container">
+      <h1 style="font-size: 50px; text-align: center;
+      margin: 15px 0 0 20px; color: #48a6a7;">Pagamento</h1>
+
+      <div class="steps">
+        <div class="step">
+          <h5>Pagamento</h5> - <h5>Confirmação</h5> - <h5>Compra Finalizada</h5>
+        </div>
+      </div>
+
+      <div class="products-payment">
+        <div class="product-details">
+          <img src="assets/Barber-image.png" alt="Imagem do Produto" style="margin: 20px 0 0 10px " />
+          <div class="product-info">
+            <h2 class="product-title">Website para barbeiros feito com React</h2>
+            <p>Preço: R$300</p>
+            <p>
+              Descrição: Um website moderno para barbeiros, desenvolvido com React.
+              Inclui funcionalidades de agendamento e portfólio.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="title-payment">
+        <h1>Formas de pagamento</h1>
+      </div>
+
+      <div class="methodCard">
+        <div class="cards">
+          <div class="credit" onclick="mostrarFormularioCartao()">
+            <h4>Pagar com</h4>
+            <div style="margin-top: 15px; text-align: center;">
+              <img src="assets/visa.png" alt="Visa" style="margin: 0 10px" />
+              <img src="assets/master.png" alt="Master" style="margin: 0 10px" />
+            </div>
+            <div>
+              <img src="assets/hiper.png" alt="Hipercard" style="margin: 5px 10px" />
+              <img src="assets/elo.png" alt="Elo" style="margin: 5px 10px" />
+            </div>
+          </div>
+
+          <div class="boleto">
+            <h4>Pagar com</h4>
+            <div style="margin: 20px">
+              <img src="assets/boleto.png" alt="" />
+            </div>
+          </div>
+
+          <div class="pix">
+            <h4>Pagar com</h4>
+            <div style="margin: 20px">
+              <img src="assets/pix.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form
+        id="creditCardForm"
+        class="creditCardForm"
+        style="display: none;">
+        <div style="display: inline-flex">
+          <div>
+            <h3>Cartão de Crédito Dados</h3>
+
+            <label for="name-on-card">Nome no cartão</label>
+            <input type="text" placeholder="Joao Souza" />
+
+            <label for="card-number">Número do cartão</label>
+            <input type="text" placeholder="•••• •••• •••• ••••" />
+
+            <div class="small-inputs">
+              <div>
+                <label for="data">Data de validade</label>
+                <input type="number" placeholder="MM" />
+                <input type="number" placeholder="YY" />
+              </div>
+
+              <div class="small-inputs">
+                <div>
+                  <label for="">Parcelas</label>
+                  <select name="parcelas" id="">
+                    <option value="">1x</option>
+                    <option value="">2x</option>
+                    <option value="">3x</option>
+                    <option value="">4x</option>
+                    <option value="">5x</option>
+                    <option value="">6x</option>
+                    <option value="">7x</option>
+                    <option value="">8x</option>
+                    <option value="">9x</option>
+                    <option value="">10x</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="cvc">CVV / CVC </label>
+                  <input type="text" id="cvc" placeholder="•••" />
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="buttonPayment"
+              onclick="window.location.href='finish.html'">
+              <p>Finalizar pagamento</p>
+              <img src="assets/arrow-right.svg" class="arrowImg" />
+            </button>
+          </div>
+
+          <div class="payment-dados">
+            <h3 style="width: 150px; margin-left: 20px">
+              Detalhes do Pagamento
+            </h3>
+            <div style="display: inline-flex">
+              <div class="payScripts-rigth">
+                <label for="sub">Subtotal: </label>
+                <label for="">Assinatura: </label>
+                <label for="valor">Total:</label>
+              </div>
+              <div class="payScripts-left">
+                <label for="">R$ 300,00</label>
+                <label for="">R$ -100,00</label>
+                <label for="">R$ 200,00</label>
+              </div>
+            </div>
+
+            <hr style="margin: 10px 0 0px 20px; width: 180px" />
+
+            <div class="details">
+              <div class="payscripts-rigth">
+                <label for="method-pay">Método:</label>
+                <label for="parcelas">Parcelas:</label>
+              </div>
+              <div class="payscripts-left">
+                <img
+                  src="assets/visa.png"
+                  alt="visaLogo"
+                  style="width: 35px;" />
+                <label style="margin-left: 5px">5x</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

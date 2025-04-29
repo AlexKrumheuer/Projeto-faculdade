@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../Style/header.css">
+    <link rel="stylesheet" href="../../../Font-Awesome/fontawesome-free-6.7.1-web/css/all.min.css">
+    <link rel="shortcut icon" href="../../../IMG/Logo.png" type="image/x-icon">
+    <title>Compra finalizada</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: #006a71;
+        color: white;
+        min-width: 100%;
+      }
+
+      header i,p{
+        font-size: 62.5%;
+      }
+
+      .search-form {
+        display: flex;
+        margin-top: 10px;
+      }
+
+      .search-form input[type="text"] {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 20px 0 0 20px;
+        outline: none;
+        width: 400px;
+      }
+
+      .search-form button {
+        padding: 8px 12px;
+        border: none;
+        background-color: #48a6a7;
+        color: white;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .steps {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        gap: 30px;
+      }
+
+      .step {
+        color: #005e46;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .products-payment {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+
+      .product-details {
+        display: flex;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 700px;
+        width: 100%;
+      }
+
+      .product-details img {
+        width: 250px;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .product-info {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .product-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .product-info p {
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+      .final-message {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .final-message p {
+        color: #555;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container__search">
+          <form method="get" class="search-form">
+              <input type="text" name="q" placeholder="Pesquisar...">
+              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+      </div>
+      <div class="header-elements">
+          <div class="header-container__items">
+              <a href="">
+                  <p class="header-text">Sobre</p>
+              </a>
+          </div>
+          <div class="header-container__items">
+              <a href="../../modelProjects.html">
+                  <i class="fa-solid fa-house"></i>
+              </a>
+          </div>
+          <div class="header-container__items">
+              <a href="">
+                  <i class="fa-solid fa-circle-info"></i>
+              </a>
+          </div>
+          <div class="header-container__items">
+              <a href="">
+                  <i class="fa-solid fa-user"></i>
+              </a>
+          </div>
+          <div class="header-container__items">
+              <a href="../../Carrinho/carrinho.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+          </div>
+          <div class="header-container__items">
+              <a href="">
+                  <i class="fa-solid fa-heart"></i>
+              </a>
+          </div>
+      </div>
+  </header>
+
+    <div class="container">
+      <h1 style="font-size: 50px; text-align: center; margin: 15px 0 0 20px; color: #48a6a7;">Pagamento</h1>
+
+      <div class="steps">
+        <h6 class="step">Confirmação Finalizada</h6>
+      </div>
+
+      <div class="products-payment">
+        <div class="product-details">
+          <img src="assets/Barber-image.png" alt="Imagem do Produto" style="margin: 20px 0 0 10px " />
+          <div class="product-info">
+            <h2 class="product-title">Website para barbeiros feito com React</h2>
+            <p>Preço: R$300</p>
+            <p>
+              Descrição: Um website moderno para barbeiros, desenvolvido com React.
+              Inclui funcionalidades de agendamento e portfólio.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="final-message">
+        <h1>Sua compra foi finalizada!</h1>
+        <p>Em até 2 semanas seu Website estará finalizado.</p>
+        <p>Para mais informações, entre em contato com o fornecedor do modelo.</p>
+      </div>
+    </div>
+  </body>
+</html>

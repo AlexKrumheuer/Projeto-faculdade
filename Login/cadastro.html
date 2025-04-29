@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="../IMG/Logo.png" type="image/x-icon">
+
+    <style>
+      body {
+        background: linear-gradient(120deg, #578588, #006a71);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .form {
+        background-color: #fff;
+        box-shadow: 5px 20px 35px rgba(0, 0, 0, 0.233);
+        width: 325px;
+        height: 370px;
+        padding: 30px;
+        text-align: center;
+        border-radius: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: #3a8385;
+        margin: 0px 0 10px 0;
+      }
+
+      input {
+        width: 250px;
+        margin: 8px 0 0 0 ;
+        outline: 0;
+        border: 0;
+      }
+
+      button {
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+        background-color: #48a6a7;
+        border-radius: 10px;
+        color: #ffffff;
+        width: 85%;
+        cursor: pointer;
+        border: 0px;
+        padding: 10px;
+        margin: 0 0 20px 0;
+      }
+
+      button:hover {
+        background: rgba(138, 190, 211, 0.877);
+      }
+
+      a {
+        text-decoration: underline;
+        color: #48a6a7;
+        margin: 0 0 0 3px;
+      }
+
+      hr{
+        border: none;
+        height: 1px;
+        width: 265px;
+        background-color: #696565;
+        margin-left: 28px;
+      }
+
+      hr.senha{
+        margin-bottom: 15px ;
+      }
+
+      label{
+        margin: 0 30px 0 -20px;
+      }
+
+      select{
+        margin-bottom: 20px;
+        width: 100px;
+        border: 0;
+        outline: 0;
+        color: #333333;
+      }
+
+      .text{
+        font-size: medium;
+        color: #636363;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form">
+      <h1>Cadastre-se</h1>
+      <input type="text" placeholder="Nome de Usuário" />
+      <hr>
+      <input type="email" placeholder="Email" />
+      <hr>
+      <input type="tel" placeholder="Telefone - (00) 0000-0000" />
+      <hr>
+      <input type="password" placeholder="Senha" />
+      <hr>
+      <input type="password" placeholder="Confirme a senha" />
+      <hr class="senha">
+      <label class="text">Tipo de Conta:</label>
+      <select name="Type user">
+        <option value="Freelancers">Freelancer</option>
+        <option value="">Usuário</option>
+      </select>
+
+      <a href="../index.html">
+        <div>
+          <button type="button">Cadastrar</button>
+        </div>
+      </a>
+
+      <div class="text">
+        Já possui conta? <a href="login.html"> Fazer Login </a>
+      </div>
+    </form>
+  </body>
+</html>

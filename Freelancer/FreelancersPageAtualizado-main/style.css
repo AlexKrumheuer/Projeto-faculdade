@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    width: 100%;
+    color: #000;
+}
+
+.container .sidenav{
+    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 32px 16px;
+    background-color: #9ACBD0;
+    transition: width 0.6s;
+}
+
+.container .logo h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.sidenav .menu_text{
+    margin-top: 24px;
+}
+
+.sidenav .menu_text p{
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.sidenav .icon_items ul{
+    list-style: none;
+    margin-top: 32px;
+    padding: 0 10px;
+}
+
+.sidenav .icon_items ul li{
+    cursor: pointer;
+    margin: 4px;
+    padding: 12px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.icon_items ul li:hover{
+    background: #119aaf;
+}
+
+.sidenav .icon_items ul li i{
+    font-size: 26px;
+    padding: 0 12px;
+}
+
+.sidenav .icon_items ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    padding-left: 18px;
+    transition: 0.3s ease;
+}
